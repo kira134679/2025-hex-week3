@@ -27,6 +27,9 @@
 
 // spacing
 
+.mb-16 {
+  margin-bottom: 16px;
+}
 .me-40 {
   margin-right: 40px;
 }
@@ -35,4 +38,35 @@
 }
 .me-auto {
   margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-neutral-0 {
+  color: $neutral-0;
+}
+
+.h1 {
+  font-size: 40px;
+}
+.h2 {
+  font-size: 32px;
+}
+.h3 {
+  font-size: 28px;
+}
+.h4 {
+  font-size: 24px;
+}
+.h5 {
+  font-size: 20px;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+.fw-700 {
+  font-weight: 700;
 }

@@ -7,8 +7,22 @@
   padding-bottom: 151px;
 }
 
-.intro {
+.blockquote {
   border-radius: 12px;
+
+  p {
+    font-weight: 400;
+  }
+}
+
+.intro-banner {
+  width: calc(100% + 110px * 2);
+  margin-left: -110px;
+  margin-right: -110px;
+}
+
+.intro {
+  border-bottom: 1px solid $neutral-300;
 
   p {
     font-weight: 400;

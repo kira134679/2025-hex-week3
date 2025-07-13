@@ -21,7 +21,25 @@
   margin-right: -110px;
 }
 
-.intro {
+.history {
+  ol {
+    list-style: disc;
+    list-style-position: inside;
+    font-weight: 400;
+  }
+
+  time {
+    margin-right: 8px;
+  }
+
+  span {
+    border-left: 1px solid $neutral-900;
+    padding-left: 8px;
+  }
+}
+
+.intro,
+.history {
   border-bottom: 1px solid $neutral-300;
 
   p {

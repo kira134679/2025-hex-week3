@@ -1,4 +1,8 @@
-.footer {
-  background: #69f0ae;
-  font-size: 64px;
+.copyright {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: $neutral-600;
+  border-top: 1px solid $neutral-300;
+  padding-top: 32px;
 }

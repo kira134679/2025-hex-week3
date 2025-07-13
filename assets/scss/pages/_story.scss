@@ -52,3 +52,21 @@
     border-left: 3px solid $neutral-300;
   }
 }
+
+.episode {
+  li {
+    font-weight: 500;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .bi-arrow-up-right {
+    margin-right: 8px;
+  }
+
+  a {
+    text-decoration-line: underline;
+    padding-bottom: 4px;
+    text-underline-offset: 4px;
+  }
+}

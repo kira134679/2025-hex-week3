@@ -1,11 +1,30 @@
 .story-banner {
+  position: relative;
   background-image: url(/assets/images/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding-top: 151px;
   padding-bottom: 151px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  @include breakpoint-md {
+    background-image: url(/assets/images/hero-md.png);
+    padding-top: 87px;
+    padding-bottom: 87px;
+  }
 }
+
+// .mask {
+//   background-color: rgba(0, 0, 0, 0.4);
+//   background-size: cover;
+// }
 
 .blockquote {
   border-radius: 12px;

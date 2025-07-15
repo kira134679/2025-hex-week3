@@ -1,3 +1,9 @@
+@mixin breakpoint-md {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;

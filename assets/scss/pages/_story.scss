@@ -47,6 +47,11 @@
     list-style: disc;
     list-style-position: inside;
     font-weight: 400;
+
+    @include breakpoint-md {
+      list-style-position: outside;
+      margin-left: 1.5em;
+    }
   }
 
   time {

@@ -1,4 +1,14 @@
-@import './layout/header.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css');
+
+@import './base/variables.scss';
+
+@import './base/reset.scss';
+@import './base/base.scss';
+
+@import './helpers/utils.scss';
+
 @import './layout/footer.scss';
 
 @import './pages/index.scss';
+@import './pages/story.scss';

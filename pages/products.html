@@ -6,7 +6,14 @@
     <title>所有商品 | URBNSTEP</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%> <%- include('./layout/footer'); -%>
+    <%- include('./layout/header'); -%>
+
+    <main class="py-32">
+      <%- include('./components/breadcrumb', { items: [ {name: '首頁', active: false}, {name: '女鞋', active: false},
+      {name: '所有商品', active: true} ] }); -%>
+    </main>
+
+    <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
   </body>

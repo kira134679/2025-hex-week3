@@ -136,6 +136,10 @@
 .pb-48 {
   padding-bottom: 48px;
 }
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 .py-12 {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -292,4 +296,17 @@
 .btn-dark {
   background-color: $neutral-900;
   color: $neutral-0;
+}
+
+.list-group-item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.list-group-item.active {
+  color: $primary-400;
 }

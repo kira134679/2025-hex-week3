@@ -35,6 +35,11 @@
   padding-left: 12px;
   padding-right: 12px;
 }
+.col-2 {
+  width: calc(100% / 12 * 2);
+  padding-left: 12px;
+  padding-right: 12px;
+}
 .col-8 {
   width: calc(100% / 12 * 8);
   padding-left: 12px;
@@ -42,6 +47,18 @@
 }
 .col-10 {
   width: calc(100% / 12 * 10);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.product-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.product-col-3 {
+  width: calc(100% / 10 * 3);
   padding-left: 12px;
   padding-right: 12px;
 }

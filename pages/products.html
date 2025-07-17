@@ -26,10 +26,21 @@
         </div>
         <div class="col-10">
           <div class="product-row">
-            <div class="product-col-3">
-              <%- include('./components/productCard', {products: [ { name: 'PLATFORM 404', price: '2,600', imgPath:
-              '/assets//images/product.png', } ]}) -%>
-            </div>
+            <!-- prettier-ignore -->
+            <%- include('./components/productCard',
+                {
+                  products: [
+                    { name: 'PLATFORM 404',
+                      price: '2,600',
+                      imgPath: '/assets//images/product.png',
+                    },
+                    { name: 'PLATFORM 404',
+                      price: '2,600',
+                      imgPath: '/assets//images/product.png',
+                    },
+                  ]
+                }) 
+              -%>
           </div>
         </div>
       </div>

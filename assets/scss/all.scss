@@ -6,10 +6,10 @@
 @import './base/reset.scss';
 @import './base/base.scss';
 
+@import './helpers/utils.scss';
+
 @import './components/breadcrumb.scss';
 @import './components/pagination.scss';
-
-@import './helpers/utils.scss';
 
 @import './layout/footer.scss';
 

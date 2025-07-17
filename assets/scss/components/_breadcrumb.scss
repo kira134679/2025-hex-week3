@@ -4,6 +4,10 @@
 
 .breadcrumb-item {
   color: $neutral-600;
+
+  @include breakpoint-md {
+    font-size: 14px;
+  }
 }
 
 .breadcrumb-item.active {

@@ -1,0 +1,38 @@
+.product-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.product-col-4 {
+  width: calc(100% / 12 * 4);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@include breakpoint-md {
+  .product-md-row {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+
+  .product-md-col-2 {
+    width: calc(100% / 4 * 2);
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .product-md-col {
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+.product-item:nth-child(n + 10) {
+  display: none;
+
+  @include breakpoint-md {
+    display: block;
+  }
+}

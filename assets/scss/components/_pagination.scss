@@ -1,0 +1,34 @@
+.pagination {
+  display: flex;
+}
+
+.page-item {
+  .page-link {
+    padding: 8px 15px;
+  }
+
+  &:first-child {
+    margin-right: 12px;
+  }
+
+  &:last-child {
+    margin-left: 12px;
+  }
+
+  &.active {
+    background-color: $primary-300;
+  }
+
+  &:not(.active) {
+    font-weight: 400;
+  }
+
+  &.disabled {
+    opacity: 0.4;
+
+    .page-link {
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+}

@@ -306,6 +306,11 @@
 .btn-dark {
   background-color: $neutral-900;
   color: $neutral-0;
+  transition-duration: 0.5s;
+
+  &:hover {
+    background-color: $neutral-700;
+  }
 }
 
 .list-group-item {
@@ -319,4 +324,26 @@
 
 .list-group-item.active {
   color: $primary-400;
+}
+
+// effects
+
+.icon-btn {
+  transition-duration: 0.5s;
+
+  &:hover {
+    color: $primary-400;
+  }
+}
+
+.nav-link {
+  transition-duration: 0.5s;
+
+  &-neutral:hover {
+    color: $neutral-600;
+  }
+
+  &-primary:hover {
+    color: $primary-500;
+  }
 }

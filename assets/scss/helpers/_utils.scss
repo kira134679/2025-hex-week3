@@ -4,6 +4,14 @@
   }
 }
 
+@mixin hover-color($hover-color, $duration: 0.5s) {
+  transition-duration: $duration;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -313,7 +321,7 @@
   }
 }
 
-.list-group-item {
+.nav-item {
   padding-top: 8px;
   padding-bottom: 8px;
 
@@ -322,28 +330,24 @@
   }
 }
 
-.list-group-item.active {
-  color: $primary-400;
-}
-
 // effects
 
 .icon-btn {
-  transition-duration: 0.5s;
-
-  &:hover {
-    color: $primary-400;
-  }
+  @include hover-color($primary-400);
 }
 
 .nav-link {
-  transition-duration: 0.5s;
+  @include hover-color($neutral-600);
 
-  &-neutral:hover {
-    color: $neutral-600;
+  &-neutral {
+    @include hover-color($neutral-600);
   }
 
-  &-primary:hover {
-    color: $primary-500;
+  &-primary {
+    @include hover-color($primary-500);
+  }
+
+  &.active {
+    color: $primary-400;
   }
 }

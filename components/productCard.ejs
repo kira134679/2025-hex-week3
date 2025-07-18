@@ -1,7 +1,7 @@
 <% for (product of products) { %>
-  <div class="product-col-4 product-md-col-2 mb-48 product-item">
-    <img src="<%= product.imgPath %>" alt="<%= product.name %>" class="mb-12" />
-    <h2 class="mb-4"><%= product.name %></h2>
+  <div class="product-col-4 product-md-col-2 mb-48 mb-md-24 product-item">
+    <img src="<%= product.imgPath %>" alt="<%= product.name %>" class="mb-12 mb-md-8" />
+    <h2 class="mb-4 mb-md-0"><%= product.name %></h2>
     <p>NT$<%= product.price %></p>
   </div>
 <% } %>

@@ -3,15 +3,27 @@
 }
 
 .breadcrumb-item {
-  color: $neutral-600;
+  a {
+    display: inline-block;
+    color: $neutral-600;
 
-  @include breakpoint-md {
-    font-size: 14px;
+    @include breakpoint-md {
+      font-size: 14px;
+    }
   }
-}
 
-.breadcrumb-item.active {
-  color: $neutral-900;
+  &.active {
+    a {
+      color: $neutral-900;
+      cursor: default;
+    }
+  }
+
+  &:not(.active) {
+    a {
+      @include hover-color($primary-400);
+    }
+  }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -19,4 +31,6 @@
   padding-left: 12px;
   padding-right: 12px;
   color: $neutral-300;
+
+  @include hover-color($primary-400);
 }

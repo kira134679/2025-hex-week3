@@ -4,8 +4,8 @@
   }
 }
 
-@mixin hover-color($hover-color, $duration: 0.5s) {
-  transition-duration: $duration;
+@mixin hover-color($hover-color, $time: $duration) {
+  transition-duration: $time;
 
   &:hover {
     color: $hover-color;
@@ -314,7 +314,7 @@
 .btn-dark {
   background-color: $neutral-900;
   color: $neutral-0;
-  transition-duration: 0.5s;
+  transition-duration: $duration;
 
   &:hover {
     background-color: $neutral-700;

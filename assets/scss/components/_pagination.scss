@@ -3,6 +3,8 @@
 }
 
 .page-item {
+  transition-duration: $duration;
+
   .page-link {
     padding: 8px 15px;
   }
@@ -21,6 +23,11 @@
 
   &:not(.active) {
     font-weight: 400;
+
+    &:hover {
+      font-weight: 500;
+      background-color: $neutral-100;
+    }
   }
 
   &.disabled {

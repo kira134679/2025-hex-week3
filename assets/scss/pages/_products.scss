@@ -12,20 +12,20 @@
 
 @include breakpoint-md {
   .product-md-row {
-    margin-left: -6px;
-    margin-right: -6px;
+    margin-left: -8px;
+    margin-right: -8px;
   }
 
   .product-md-col-2 {
     width: calc(100% / 4 * 2);
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .product-md-col {
     width: 100%;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 

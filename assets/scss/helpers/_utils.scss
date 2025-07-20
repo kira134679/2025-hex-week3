@@ -171,6 +171,10 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.py-48 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
 .py-64 {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -239,6 +243,12 @@
 
 .text-neutral-0 {
   color: $neutral-0;
+}
+.text-neutral-500 {
+  color: $neutral-500;
+}
+.text-primary-300 {
+  color: $primary-300;
 }
 .text-primary-400 {
   color: $primary-400;

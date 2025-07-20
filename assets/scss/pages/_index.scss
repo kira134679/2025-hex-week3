@@ -1,11 +1,11 @@
-.hero-banner {
+.banner-hero {
   background-image: url(/assets/images/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 289px 0;
 }
-.hero-section {
+.section-hero {
   margin-left: 200px;
 }
 
@@ -14,4 +14,22 @@
   background-color: $primary-100;
   padding: 8px 12px;
   font-size: 14px;
+}
+
+.banner-collab {
+  background-image: url(/assets/images/banner-co-branded.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section-collab {
+  padding: 100px 0;
+
+  p {
+    font-weight: 400;
+  }
+}
+.symbol-collab {
+  margin: 0 24px;
+  vertical-align: top;
 }

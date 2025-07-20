@@ -228,6 +228,12 @@
   color: $primary-400;
 }
 
+.display-1 {
+  font-size: 64px;
+}
+.display-2 {
+  font-size: 48px;
+}
 .h1 {
   font-size: 40px;
 }
@@ -279,6 +285,9 @@
 .position-relative {
   position: relative;
 }
+.position-absolute {
+  position: absolute;
+}
 
 .zindex-1 {
   z-index: 1;
@@ -305,6 +314,7 @@
     sans-serif;
 
   padding: 12px 24px;
+  transition-duration: $duration;
 
   @include breakpoint-md {
     padding: 8px 16px;
@@ -314,11 +324,16 @@
 .btn-dark {
   background-color: $neutral-900;
   color: $neutral-0;
-  transition-duration: $duration;
 
   &:hover {
     background-color: $neutral-700;
   }
+}
+.btn-primary {
+  background-color: $primary-300;
+  color: $neutral-900;
+
+  @include hover-color($primary-500);
 }
 
 .nav-item {

@@ -12,6 +12,10 @@
 }
 .section-hero {
   margin-left: 200px;
+
+  @include breakpoint-md {
+    margin-left: 24px;
+  }
 }
 
 .badge-hotsale {

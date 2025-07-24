@@ -118,10 +118,19 @@
     display: none;
   }
 }
-
 .d-md-inline-block {
   @include breakpoint-md {
     display: inline-block;
+  }
+}
+.flex-md-nowrap {
+  @include breakpoint-md {
+    flex-wrap: nowrap;
+  }
+}
+.overflow-x-md-auto {
+  @include breakpoint-md {
+    overflow-x: auto;
   }
 }
 
@@ -259,6 +268,10 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
+  .py-md-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .p-md-24 {
     padding: 24px;
   }
@@ -307,6 +320,9 @@
 @include breakpoint-md {
   .text-md-start {
     text-align: left;
+  }
+  .display-md-2 {
+    font-size: 48px;
   }
   .h3-md {
     font-size: 28px;

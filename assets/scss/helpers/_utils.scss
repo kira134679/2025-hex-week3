@@ -123,6 +123,9 @@
   }
 }
 
+.d-none {
+  display: none;
+}
 .d-inline-block {
   display: inline-block;
 }
@@ -150,6 +153,9 @@
   @include breakpoint-md {
     flex-direction: column;
   }
+}
+.flex-md-1 {
+  flex: 1;
 }
 .overflow-x-md-auto {
   @include breakpoint-md {

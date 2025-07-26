@@ -131,6 +131,11 @@
     display: none;
   }
 }
+.d-md-flex {
+  @include breakpoint-md {
+    display: flex;
+  }
+}
 .d-md-inline-block {
   @include breakpoint-md {
     display: inline-block;
@@ -139,6 +144,11 @@
 .flex-md-nowrap {
   @include breakpoint-md {
     flex-wrap: nowrap;
+  }
+}
+.flex-md-column {
+  @include breakpoint-md {
+    flex-direction: column;
   }
 }
 .overflow-x-md-auto {
@@ -243,6 +253,9 @@
   }
   .mb-md-0 {
     margin-bottom: 0;
+  }
+  .mb-md-4 {
+    margin-bottom: 4px;
   }
   .mb-md-8 {
     margin-bottom: 8px;

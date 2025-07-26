@@ -123,6 +123,9 @@
   }
 }
 
+.d-inline-block {
+  display: inline-block;
+}
 .d-md-none {
   @include breakpoint-md {
     display: none;

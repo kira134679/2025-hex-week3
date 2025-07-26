@@ -23,6 +23,7 @@
   background-color: $primary-100;
   padding: 8px 12px;
   font-size: 14px;
+  z-index: 1; // 避免一起套用到 product-link 的 hover 效果
 }
 
 .banner-collab {

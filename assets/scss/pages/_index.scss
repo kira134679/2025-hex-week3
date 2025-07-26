@@ -76,6 +76,18 @@
   height: 100%;
 }
 
+.series-link {
+  h3 {
+    transition-duration: $duration;
+  }
+
+  &:hover {
+    h3 {
+      color: $primary-300;
+    }
+  }
+}
+
 .horizontal-scroll-md-row {
   @include breakpoint-md {
     margin-left: -8px;

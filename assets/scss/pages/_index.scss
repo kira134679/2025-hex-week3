@@ -17,14 +17,6 @@
     margin-left: 24px;
   }
 }
-.star {
-  top: -32px;
-  left: -80px;
-}
-.sparkle {
-  right: -40px;
-  bottom: 32px;
-}
 
 .badge-hotsale {
   color: $primary-400;
@@ -34,10 +26,30 @@
 }
 
 .banner-collab {
+  text-align: center;
   background-image: url(/assets/images/banner-co-branded.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 100px 0;
+  position: relative;
+
+  p {
+    font-weight: 400;
+  }
+
+  .star {
+    position: absolute;
+    width: 48px;
+    top: 68px; // 從 banner-collab 邊緣開始計算
+    left: calc(50% - 397px); // 計算從中心線的偏移
+  }
+  .sparkle {
+    position: absolute;
+    width: 76px;
+    bottom: 132px; // 從 banner-collab 邊緣開始計算
+    right: calc(50% - 357px); // 計算從中心線的偏移
+  }
 
   @include breakpoint-md {
     background-image: url(/assets/images/banner-co-branded-sm.png);
@@ -46,10 +58,6 @@
 .section-collab {
   padding: 100px 0;
   max-width: 100%;
-
-  p {
-    font-weight: 400;
-  }
 }
 .symbol-collab {
   margin: 0 24px;

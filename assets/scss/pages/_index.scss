@@ -33,7 +33,9 @@
   background-position: center;
   padding: 100px 0;
   position: relative;
-
+  overflow: hidden; /* 因為圖片超出容器會出現 x 軸，
+  設定用來隱藏超出的部分，避免出現 x 軸
+  */
   p {
     font-weight: 400;
   }
@@ -43,16 +45,27 @@
     width: 48px;
     top: 68px; // 從 banner-collab 邊緣開始計算
     left: calc(50% - 397px); // 計算從中心線的偏移
+
+    @include breakpoint-md {
+      top: 32px;
+      left: -20px;
+    }
   }
   .sparkle {
     position: absolute;
     width: 76px;
     bottom: 132px; // 從 banner-collab 邊緣開始計算
     right: calc(50% - 357px); // 計算從中心線的偏移
+
+    @include breakpoint-md {
+      bottom: 104px;
+      right: -28px;
+    }
   }
 
   @include breakpoint-md {
     background-image: url(/assets/images/banner-co-branded-sm.png);
+    padding: 64px 0;
   }
 }
 .section-collab {

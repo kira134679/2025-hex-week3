@@ -14,6 +14,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.05em;
   color: $neutral-900;
+  overflow-x: clip; // prevent horizontal scrollbar when using aos.
+  // see more: https://github.com/michalsnik/aos/issues/832#issuecomment-2814994153
 }
 
 a {
